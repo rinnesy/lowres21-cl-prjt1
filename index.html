@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet">
+    <title>Guess That Sample</title>
+</head>
+<body>
+    <h1 class="outside" id="title">Guess<br>That<br>Sample</h1>
+
+    <!-- Settings menu pane -->
+    <!-- Source: https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+    <div id="mySidenav" class="sidenav">
+        <h1 class="inside">Guess<br>That<br>Sample</h1>
+        <ul class="menu-options">
+            <li>Difficulty</li>
+            <div class="difficulty-options">
+                <button id="easy"></button>
+                <button id="medium"></button>
+                <button id="hard"></button>
+            </div>
+            <!-- <li>Volume</li> -->
+        </ul>
+        <img src="media/settingsIcon.png" class="closebtn" onclick="closeNav()"></a>
+    </div>
+    <div class="openbtn" onclick="openNav()">
+        <img src="media/settingsIcon.png" alt="">
+    </div>
+
+    <div class="start-container show" id="start-container">
+        <h2>How to Play</h2>
+        <ol class="instructions">
+            <li>Press play button to hear the music in question.</li>
+            <li>Review the answer choices beneath the music art.</li>
+            <li>Select the song that you think is sampled in the music.</li>
+        </ol>
+        <p><u>Note</u>: After <strong>(3)</strong> wrong guesses, the game is <strong>over</strong>!</p>
+        <button id="start-btn" class="start-btn btn">Start</button>
+    
+    </div>
+    
+    <div class="game-content hide" id="game-container">
+        <!-- Music Player -->
+        <!-- Source: https://github.com/yohanstesfaye/Adey-Coder/tree/master/Javascript/MiniPlayer -->
+        <audio id="player" src="media/song-data/sameOlMistakes.mp3" class="nowPlaying" id="nowPlaying"></audio>
+        <div class="player">
+            <div class="control">
+                <i class="fas fa-play" id="playbtn"></i>
+            </div>
+            <div class="info" id="song">
+                <br><span id="artist"></span>
+                <div class="bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div id="current">0:00</div>
+        </div>
+
+
+        <!-- Music Art -->
+        <img class="song-cover" alt="Cover art for music that's playing." src="media/music-covers/rihanna-antiCover.png"/>
+
+        <!-- Answer Choices -->
+        <div id="question-container" class="game-options">
+            <div id="answer buttons" class="btn-grid">
+                <button class="btn" id="correct">Answer 1</button>
+                <button class="btn" id="incorrect">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <div class="hide" id="attempts-container"></div>
+
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</body>
+</html>
