@@ -1,0 +1,121 @@
+{
+    "description": "list of songs and their sample references",
+    "source": "https://music.apple.com/us/playlist/this-or-that/pl.u-mJy83ZECy1rG0k",
+    "songs": [{
+        "songTitle": "Same Ol' Mistakes",
+        "songArtist": "Rihanna",
+        "sampleTitle": "New Person, Same Old Mistakes",
+        "sampleArtist": "Tame Impala"
+        }, {
+        "songTitle": "Cayendo",
+        "songArtist": "Frank Ocean",
+        "sampleTitle": "Love Is Stronger Than Pride",
+        "sampleArtist": "Sade"
+    }, {
+        "songTitle": "Addiction",
+        "songArtist": "Kanye West",
+        "sampleTitle": "My Funny Valentine",
+        "sampleArtist": "Etta James"           
+    }, {
+        "songTitle": "Teleport 2 Me, Jamie",
+        "songArtist": "WZRD",
+        "sampleTitle": "Under Your Spell",
+        "sampleArtist": "Desire"
+    }, {
+        "songTitle": "Sixty-Seven Turbo Jet",
+        "songArtist": "Curren$y",
+        "sampleTitle": "Children of the Ghetto",
+        "sampleArtist": "Philip Bailey"
+    }, {
+        "songTitle": "Free Smoke",
+        "songArtist": "Drake",
+        "sampleTitle": "Building a Ladder",
+        "sampleArtist": "Hiatus Kaiyote"
+    }, {
+        "songTitle": "Recognize",
+        "songArtist": "PARTYNEXTDOOR",
+        "sampleTitle": "Girl With the Tatto Enter.Lewd",
+        "sampleArtist": "Miguel"       
+    }, {
+        "songTitle": "Lift Up Your Voices",
+        "songArtist": "Sunday Service Choir",
+        "sampleTitle": "Elastic Heart",
+        "sampleArtist": "Sia"
+    }, {
+        "songTitle": "Upgrade U",
+        "songArtist": "Beyoncé",
+        "sampleTitle": "Girls Can't Do What Guys Do",
+        "sampleArtist": "Betty Wright"        
+    }, {
+        "songTitle": "I'm Still In Love With You",
+        "songArtist": "Sean Paul",
+        "sampleTitle": "Can't Stop a Man",
+        "sampleArtist": "Beres Hammond"
+    }, {
+        "songTitle": "Soulo Ho3",
+        "songAritst": "Ab-Soul",
+        "sampleTitle": "Control",
+        "sampleArtist": "Janet Jackson"
+    }, {
+        "songTitle": "Livin' It Up",
+        "songArtist": "Ja Rule",
+        "sampleTitle": "Do I Do",
+        "sampleArtist": "Stevie Wonder"
+    }, {
+        "songTitle": "RIP Young",
+        "songArtist": "Isaiah Rashad",
+        "sampleTitle": "Cheese and Dope",
+        "sampleArtist": "Project Pat"
+    }, {
+        "songTitle": "Between Us",
+        "songArtist": "dvsn",
+        "sampleTitle": "Nice & Slow",
+        "sampleArtist": "Usher"
+    }, {
+        "songTitle": "Overrated",
+        "songArtist": "Blxst",
+        "sampleTitle": "This Luv",
+        "sample-artist": "Donell Jones"
+    }, {
+        "songTitle": "My Life",
+        "songArtist": "Mary J. Blige",
+        "sampleTitle": "Everybody Loves the Sunshine",
+        "sampleArtist": "Roy Ayers"
+    }, {
+        "songTitle": "Let Me Hold You",
+        "songArtist": "Bow Wow",
+        "sampleTitle": "If Only for One Night",
+        "sampleArtist": "Luther Vandross"
+    }, {
+        "songTitle": "Young",
+        "songArtist": "Buddy",
+        "sampleTitle": "Liberation",
+        "sampleArtist": "Outkast"
+    }, {
+        "songTitle": "Trippin Out",
+        "songArtist": "Mac Miller",
+        "sampleTitle": "The Star of a Story",
+        "sampleArtist": "Heatwave"
+    }, {
+        "songTitle": "Purity",
+        "songArtist": "A$AP Rocky",
+        "sampleTitle": "I Gotta Find Peace of Mind",
+        "sampleArtist": "Lauryn Hill"
+    }, {
+        "songTitle": "Jump",
+        "songArtist": "Rihanna",
+        "sampleTitle": "Pony",
+        "sampleArtist": "Ginuwine"
+    }, {
+        "songTitle": "Brooklyn's Finest",
+        "songArtist": "Jay-Z",
+        "sampleTitle": "Ecstasy",
+        "sampleArtist": "Ohio Players"
+    }, {
+        "songTitle": "You've Changed",
+        "songArtist": "Keyshia Cole",
+        "sampleTitle": "Sounds Like a Love Song",
+        "sampleArtist": "Bobby Glenn"
+    }
+    ]
+}

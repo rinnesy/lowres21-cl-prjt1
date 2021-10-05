@@ -43,10 +43,10 @@
     
     </div>
     
-    <div class="game-content hide" id="game-container">
+    <div class="game-content1 hide" id="game-container">
         <!-- Music Player -->
         <!-- Source: https://github.com/yohanstesfaye/Adey-Coder/tree/master/Javascript/MiniPlayer -->
-        <audio id="player" src="media/song-data/sameOlMistakes.mp3" class="nowPlaying" id="nowPlaying"></audio>
+        <audio id="player" src="media/song-data/sameOlMistakes.mp3" class="nowPlaying"></audio>
         <div class="player">
             <div class="control">
                 <i class="fas fa-play" id="playbtn"></i>
@@ -66,17 +66,88 @@
 
         <!-- Answer Choices -->
         <div id="question-container" class="game-options">
-            <div id="answer buttons" class="btn-grid">
+            <div id="answer-buttons1" class="btn-grid">
                 <button class="btn" id="correct">Answer 1</button>
                 <button class="btn" id="incorrect">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button class="btn" id="incorrect">Answer 3</button>
+                <button class="btn" id="incorrect">Answer 4</button>
             </div>
         </div>
         <div class="controls">
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
+    
+    <div class="game-content2 hide" id="game-container-MIA">
+        <!-- Music Player -->
+        <!-- Source: https://github.com/yohanstesfaye/Adey-Coder/tree/master/Javascript/MiniPlayer -->
+        <audio id="player2" src="media/song-data/20Dollar.mp3" class="nowPlaying"></audio>
+        <div class="player">
+            <div class="control">
+                <i class="fas fa-play" id="playbtn"></i>
+            </div>
+            <div class="info" id="song">
+                <br><span id="artist"></span>
+                <div class="bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div id="current">0:00</div>
+        </div>
+
+
+        <!-- Music Art -->
+        <img class="song-cover" alt="Cover art for music that's playing." src="/media/music-covers/mia-kalaCover.png"/>
+
+        <!-- Answer Choices -->
+        <div id="question-container" class="game-options">
+            <div id="answer-buttons2" class="btn-grid">
+                <button class="btn" id="correct">Answer 1</button>
+                <button class="btn" id="incorrect">Answer 2</button>
+                <button class="btn" id="incorrect">Answer 3</button>
+                <button class="btn" id="incorrect">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <div class="game-content3 hide" id="game-container-BP">
+        <!-- Music Player -->
+        <!-- Source: https://github.com/yohanstesfaye/Adey-Coder/tree/master/Javascript/MiniPlayer -->
+        <audio id="player3" src="media/song-data/dontTurnAround.mp3" class="nowPlaying"></audio>
+        <div class="player">
+            <div class="control">
+                <i class="fas fa-play" id="playbtn"></i>
+            </div>
+            <div class="info" id="song">
+                <br><span id="artist"></span>
+                <div class="bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div id="current">0:00</div>
+        </div>
+
+
+        <!-- Music Art -->
+        <img class="song-cover" alt="Cover art for music that's playing." src="/media/music-covers/biigPiigCover.png"/>
+
+        <!-- Answer Choices -->
+        <div id="question-container" class="game-options">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn" id="correct">Answer 1</button>
+                <button class="btn" id="incorrect">Answer 2</button>
+                <button class="btn" id="incorrect">Answer 3</button>
+                <button class="btn" id="incorrect">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
 
     <div class="hide" id="attempts-container"></div>
 

@@ -3,7 +3,10 @@ let nextButton = document.getElementById('next-btn');
 
 let startContainerElement = document.getElementById ('start-container');
 let gameContainerElement = document.getElementById ('game-container');
-let questionElement = document.getElementById('question');
+let gameContainerElement2 = document.getElementById ('game-container-MIA');
+let gameContainerElement3 = document.getElementById ('game-container-BP');
+let questionElement = document.getElementById('song');
+let questionArtCover = document.getElementById('cover');
 let answerButtonsElement = document.getElementById('answer-buttons');
 let attemptsContainer = document.getElementById('attempts-container');
 
@@ -31,10 +34,10 @@ attemptsContainer.classList.remove("hide");
 attemptsContainer.classList.add('show');
 console.log(attemptsContainer);
 
-shuffledQuestions = questions.sort(() => Math.random() -.5);
+// shuffledQuestions = questions.sort(() => Math.random() -.5);
 currentQuestionIndex = 0;
 
-nextQuestion();
+nextQuestion()
 }
 
 // Select an answer
@@ -51,17 +54,19 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
     }
-    
+    console.log(selectedButton.id);
+    nextQuestion();
 }
 
 // Move to the next question
 function nextQuestion() {
     resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    showQuestion();
 }
 
-function showQuestion(question) {
-    questionElement.innerText = question.question;
+function showQuestion(questions) {
+    questionElement.innerHTML = question.question;
+    questionArtCover.src = question.img;
     question.answers.array.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -87,7 +92,7 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct');
     } else {
-        element.classList.add('wrong');
+        element.classList.add('incorrect');
     }
 }
 
@@ -98,11 +103,30 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'What is 2+2?',
+        question: "Same Ol' Mistakes\nRihanna",
+        img: '"/media/music-covers/rihanna-antiCover.png"',
         answers: [
-            { text: 4, correct: true },
-            { text: '22', correct: false }
-        ]
+            { text: "New Person, Same Old Mistakes\nTame Impala", correct: true },
+            { text: "Mistakes\nMorray", correct: false },
+            { text: "Upgrade U\nBeyonce", correct: false },
+            { text: "Building a Ladder\nHiatus Kaiyote", correct: false }
+        ],
+        question: "20 Dollar\nM.I.A.",
+        img: '',
+        answers: [
+            { text: "10 Dollar\nM.I.A.", correct: false },
+            { text: "Funky Dollar Bill\nFunkadelic", correct: false },
+            { text: "20 Something\nSZA", correct: false },
+            { text: "Where Is My Mind?\nPixies", correct: true }
+        ],
+        question: "Don't Turn Around\nBiig Piig",
+        img: '"/media/music-covers/biigPiigCover.png"',
+        answers: [
+            { text: "Turning Point\nMario", correct: false },
+            { text: "Don't Play Around\nGunna", correct: false },
+            { text: "Get It On Tonite\nMontell Jordan", correct: true },
+            { text: "Thinking Out Loud\nMiguel", correct: false }
+        ] 
     }
 ]
 
@@ -145,8 +169,8 @@ $(".game-options").click(function(evt){
     console.log(itemID);
 
     // 3. change button CSS when correct answer is selected
-    $(".correct_answer").css("background", "#217C12");
-    $(".correct_answer").css("border-color", "#217C12");
+    $(".correct").css("background", "#217C12");
+    $(".correct").css("border-color", "#217C12");
 });
 
 
@@ -155,8 +179,8 @@ $(".game-options").click(function(evt){
 let remainingLives = ["X\n", "X\n", "X\n"];
 let usedLives = [];
 
-let correctButton = document.getElementById("correct");
-let incorrectButton = document.getElementById("incorrect");
+let correctButton;
+let incorrectButton;
 
 
 function setup() {
@@ -164,8 +188,8 @@ function setup() {
   myCanvas.parent('attempts-container');
 //   background(10);
   
-  correctButton; 
-  incorrectButton; 
+  correctButton = document.getElementById("correct"); 
+  incorrectButton = document.getElementById("incorrect"); 
 //   correctButton.position = (0,0);
 //   incorrectButton.position = (0, 10);
   
@@ -189,8 +213,8 @@ function draw() {
     text(usedLives.join(''), width/2, height/2.5);
     } 
      // 2. Listen for wrong answer
-    incorrectButton.mousePressed(loseAttempt);
-    correctButton.mousePressed(correctDisplay);
+    incorrectButton.addEventListener('click', loseAttempt);
+    correctButton.addEventListener('click', correctDisplay);
     
   }
 

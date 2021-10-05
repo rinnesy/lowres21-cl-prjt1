@@ -10,11 +10,11 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    padding: 30px;
+    margin: 30px;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     background: #0b0a0a;
@@ -67,15 +67,15 @@ h2 {
     /* background-color: #F1F1F1; */
     color: #f1f1f1;
     border-radius: 5px;
-    padding: 20px;
+    padding-top: 20px;
     box-shadow: 0 0 10px 2px #c21e17;
 }
 
 .game-container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: center;
+    /* flex-wrap: wrap; */
     justify-items: center;
     justify-content: center;
     /* position: relative; */
@@ -83,7 +83,7 @@ h2 {
     /* max-width: 60%; */
     color: #0b0a0a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 30px;
     /* box-shadow: 0 0 10px 2px #c21e17; */
 }
 
@@ -155,10 +155,9 @@ h2 {
     position: absolute;
     width: 67px;
     height: 67px;
-    display: flex;
+    /* display: flex; */
     /* background: white; */
-    /* left: calc(50% - 67px/2 - 651.5px);
-    top: calc(50% - 67px/2 + 443.5px);   */
+   
 }
 
 
@@ -200,8 +199,7 @@ h2 {
     width: 67px;
     height: 67px;
     display: flex;
-    /* left: calc(50% - 67px/2 - 651.5px);
-    top: calc(50% - 67px/2 + 443.5px);   */
+
 }
 
 
@@ -226,7 +224,7 @@ h2 {
     padding: 8px 8px 8px 8px;
     list-style: none;
     font-size: 25px;
-    color: #000;
+    color: #0b0a0a;
     display: block;
     text-align: center;
 }
@@ -263,7 +261,7 @@ h2 {
 
 /* Music Player (github code) */
 .player {
-    /* width: 640px; */
+    width: 300px;
     top: 35px;
     background-color: #C81E27;
     display: flex;
@@ -273,7 +271,7 @@ h2 {
     grid-gap: 16px;
     padding: 8px 24px;
     position: relative;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px;
 }
 
 .control,#current {
@@ -326,14 +324,14 @@ h2 {
     top: var(--space);
     bottom: var(--space);
     position: absolute;
-    border-radius: 0 0 24px 24px;
+    border-radius: 20px;
     z-index: -2;
 }
 
 #progress {
     display: block;
     width: var(--progress,0%);
-    background-color: #d2cccc;
+    background-color: #f1f1f1;
     transition: all 1s linear;
     height: 100%;
 }
